@@ -3,9 +3,10 @@ package com.lastminute.salestaxes.pricer;
 import com.lastminute.salestaxes.dto.ProductDto;
 import com.lastminute.salestaxes.utils.NumberUtils;
 /**
- * This is the abstract class the apply the price based on the taxrate.
+ * This is the abstract class used to apply the price with different taxrate.
  * There are several extension of this class.
  * @author jonathan 
+ * @see DefaultPricer NoTaxPricer
  */
 public abstract class AbstractPricer {
     /**

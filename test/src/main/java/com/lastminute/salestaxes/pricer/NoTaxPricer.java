@@ -2,8 +2,9 @@ package com.lastminute.salestaxes.pricer;
 
 import com.lastminute.salestaxes.dto.ProductDto;
 /**
- * This is the class used for products without tax.
+ * Used to retrieve the tax rate of products without taxes.
  * @author jonathan
+ * @see DefaultPricer
  *
  */
 public class NoTaxPricer extends AbstractPricer {

@@ -2,8 +2,9 @@ package com.lastminute.salestaxes.pricer;
 
 import com.lastminute.salestaxes.dto.ProductDto;
 /**
- * This is the default Pricer.
+ * Used to retrieve the tax rate of standard products.
  * @author jonathan
+ * @see NoTaxPricer
  *
  */
 public class DefaultPricer extends AbstractPricer {

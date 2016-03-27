@@ -24,7 +24,7 @@ public class Main {
     private static Logger log = Logger.getLogger(Main.class);
     /**
      * The main method.
-     * @param args the arguments
+     * @param args Two arguments : input and output file.
      * @throws Exception a generic exception
      */
     public static void main(String[] args) throws Exception {

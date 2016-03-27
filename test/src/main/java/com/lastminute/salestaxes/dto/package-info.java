@@ -1,4 +1,5 @@
 /**
- * Provide dto classes.
+ * Provides dto classes.
  */
+
 package com.lastminute.salestaxes.dto;

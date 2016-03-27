@@ -20,7 +20,7 @@ public class NumberUtils {
      */
     private static final DecimalFormat NUMBER_FORMAT = new DecimalFormat("0.00");
     /**
-     * Round the nuber neares 0.5.
+     * Round the number neares 0.5.
      * @param input to round.
      * @return the rounded number.
      */

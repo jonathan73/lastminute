@@ -12,7 +12,7 @@ import com.lastminute.salestaxes.pricer.DefaultPricer;
 import com.lastminute.salestaxes.pricer.NoTaxPricer;
 import com.lastminute.salestaxes.utils.NumberUtils;
 /**
- * This is the class used to process the order.
+ * Used to process the order.
  * @author jonathan
  *
  */
