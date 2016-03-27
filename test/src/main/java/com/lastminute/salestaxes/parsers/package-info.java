@@ -1,4 +1,4 @@
 /**
- * This package contains the parsers.
+ * Provide classes used for parsing.
  */
 package com.lastminute.salestaxes.parsers;

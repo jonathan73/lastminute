@@ -1,4 +1,4 @@
 /**
- * This package contains the Main launcher end the OrderManager.
+ * This package contains the Main launcher and the general classes for processing orders.
  */
 package com.lastminute.salestaxes;

@@ -1,4 +1,4 @@
 /**
- * This package utility files.
+ * Provide utility classes.
  */
 package com.lastminute.salestaxes.utils;

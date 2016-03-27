@@ -1,4 +1,4 @@
 /**
- * This package contains all dto files.
+ * Provide dto classes.
  */
 package com.lastminute.salestaxes.dto;
