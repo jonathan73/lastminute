@@ -1,7 +1,6 @@
 package com.lastminute.salestaxes.dto;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 /**
  * This is a model class for the order.

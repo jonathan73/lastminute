@@ -3,11 +3,10 @@ package com.lastminute.salestaxes.order;
 import static junit.framework.Assert.assertEquals;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.apache.log4j.BasicConfigurator; 
+import org.apache.log4j.BasicConfigurator;
 import org.junit.Test;
 
 import com.lastminute.salestaxes.OrderManager;

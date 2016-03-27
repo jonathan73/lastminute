@@ -32,8 +32,8 @@ public class Main {
         BasicConfigurator.configure();
         
         if (args.length != 2) {
-        	log.info("Specify : inputFile outputFile");
-        	return;
+            log.info("Specify : inputFile outputFile");
+            return;
         }
           
         final File inputFile  = new File(args[0]);
