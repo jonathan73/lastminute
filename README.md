@@ -1,4 +1,4 @@
-# lastminute
+# The lastminute exercise
 
 ##Use these maven goals .
 
