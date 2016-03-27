@@ -1,3 +1,3 @@
 language: java
-sudo: false
+cd test
 script: mvn clean install
