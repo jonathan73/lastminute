@@ -32,7 +32,8 @@ public class Main {
         BasicConfigurator.configure();
         
         if (args.length != 2) {
-            throw new IllegalArgumentException("Specify : inputFile outputFile");
+        	log.info("Specify : inputFile outputFile");
+        	return;
         }
           
         final File inputFile  = new File(args[0]);
