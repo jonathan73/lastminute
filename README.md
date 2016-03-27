@@ -12,7 +12,7 @@ mvn clean install
 
 One jar maven plugin creates into the target directory an executable file  names purchase.jar. Use file as follows :
 
-java -jar purchase.jar <inputfile.txt> <outputfile.txt>
+java -jar purchase.jar [inputfile.txt] [outputfile.txt]
 
 For example : 
 
