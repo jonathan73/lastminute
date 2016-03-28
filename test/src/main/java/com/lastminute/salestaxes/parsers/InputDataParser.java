@@ -91,7 +91,7 @@ public final class InputDataParser {
                         products.add(productDto);
 
                     }
-                    dataScanner.close();
+                    
                 }
 
             }
