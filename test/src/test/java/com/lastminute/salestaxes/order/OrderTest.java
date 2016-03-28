@@ -14,7 +14,7 @@ import com.lastminute.salestaxes.dto.OrderDto;
 import com.lastminute.salestaxes.dto.ProductDto;
 import com.lastminute.salestaxes.parsers.InputDataParser;
  
-public class TestOrder {
+public class OrderTest {
     
     static{
         BasicConfigurator.configure();

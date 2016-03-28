@@ -4,7 +4,7 @@ import junit.framework.Assert;
 
 import org.junit.Test; 
 
-public class TestRound {
+public class RoundTest {
 	/**
 	 * Test if the number will be round to the nearest value of 0.5. 
 	 */

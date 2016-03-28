@@ -18,7 +18,7 @@ import com.lastminute.salestaxes.parsers.InputDataParser;
  * @author jonathan
  *
  */
-public class TestParser {
+public class ParserTest {
 	/**
 	 * Test input file 1.
 	 */
@@ -119,7 +119,7 @@ public class TestParser {
 	}
 	
 	private static File resolveFileName(String fileName){
-		return new File(TestParser.class.getClassLoader().getResource("inputfiles/" + fileName).getFile());
+		return new File(ParserTest.class.getClassLoader().getResource("inputfiles/" + fileName).getFile());
 	}
 	 
 	
