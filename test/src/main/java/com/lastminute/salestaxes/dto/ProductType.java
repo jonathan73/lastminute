@@ -1,6 +1,6 @@
 package com.lastminute.salestaxes.dto;
 /**
- * Represet the product type.
+ * Identifies the type of product.
  * @author jonathan
  *
  */

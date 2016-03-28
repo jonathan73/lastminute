@@ -4,9 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter; 
-import java.util.Collection;
-
-import org.apache.log4j.BasicConfigurator;
+import java.util.Collection; 
 import org.apache.log4j.Logger;
 
 import com.lastminute.salestaxes.dto.OrderDto;
