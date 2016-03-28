@@ -29,8 +29,6 @@ public class Main {
      */
     public static void main(String[] args) throws Exception {
         
-        BasicConfigurator.configure();
-        
         if (args.length != 2) {
             log.info("Specify : inputFile outputFile");
             return;

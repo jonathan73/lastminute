@@ -6,10 +6,8 @@ import java.util.Collection;
 import org.apache.log4j.Logger;
 
 import com.lastminute.salestaxes.dto.OrderDto;
-import com.lastminute.salestaxes.dto.ProductDto;
-import com.lastminute.salestaxes.pricer.AbstractPricer;
-import com.lastminute.salestaxes.pricer.DefaultPricer;
-import com.lastminute.salestaxes.pricer.NoTaxPricer;
+import com.lastminute.salestaxes.dto.ProductDto; 
+import com.lastminute.salestaxes.pricer.Pricer;
 import com.lastminute.salestaxes.utils.NumberUtils;
 /**
  * Used to process the order.
@@ -17,6 +15,11 @@ import com.lastminute.salestaxes.utils.NumberUtils;
  *
  */
 public class OrderManager {
+    /**
+     * Used to set the total price of the product.
+     */
+    private Pricer pricer = new Pricer();
+    
     /**
      * The logger used in the class.
      */
@@ -32,8 +35,7 @@ public class OrderManager {
         final OrderDto orderDto = new OrderDto();
         orderDto.setProducts(new ArrayList<ProductDto>());
         
-        final AbstractPricer defaulPricer = new  DefaultPricer();
-        final AbstractPricer notaxPricer = new NoTaxPricer();
+  
         log.debug("-----------------------------");
         log.debug("Purchaising ...");
         for (ProductDto productDto : products) {
@@ -44,15 +46,7 @@ public class OrderManager {
                           productDto.getPrice()
                       )
             );
-            switch (productDto.getProductType()) {
-            case TAX:
-                defaulPricer.applyPrice(productDto);
-                break;
-            case NO_TAX:
-                notaxPricer.applyPrice(productDto);
-            default:
-                break;
-            }
+            pricer.applyPrice(productDto);
             orderDto.getProducts().add(productDto);
         }
         

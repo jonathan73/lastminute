@@ -8,7 +8,7 @@ import com.lastminute.salestaxes.utils.NumberUtils;
  * @author jonathan 
  * @see DefaultPricer NoTaxPricer
  */
-public abstract class AbstractPricer {
+public class Pricer {
     /**
      * The defaul tax rate.
      */
@@ -18,7 +18,8 @@ public abstract class AbstractPricer {
      * @param productDto the product.
      */
     public final void applyPrice(ProductDto productDto) {
-        double tax = getTaxRate(productDto);
+        
+        double tax = productDto.getProductType().getTaxRate();
         if (productDto.isImported()) {
             tax += getImportTaxRate();
         }            
@@ -27,12 +28,7 @@ public abstract class AbstractPricer {
         productDto.setTotal(NumberUtils.round(finalprice));
          
     }    
-    /**
-     * Calculate the tax rate of the product.
-     * @param productDto The product.
-     * @return the tax Rate
-     */
-    protected abstract double getTaxRate(ProductDto productDto);
+    
     /**
      * Return the import tax rate. 
      * @return the import tax rate.
