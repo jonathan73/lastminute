@@ -2,11 +2,11 @@
 
 ##Use these maven goals .
 
-For java doc :
+###For java doc :
 
 mvn javadoc:javadoc
 
-For build :
+###For build :
 
 mvn clean install
 
