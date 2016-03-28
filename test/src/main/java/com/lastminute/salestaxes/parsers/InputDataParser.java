@@ -71,16 +71,13 @@ public final class InputDataParser {
      * @return list of products.
      */
     public List<ProductDto> parse(File file) {
-        final List<ProductDto> products = new ArrayList<ProductDto>();
-        Scanner scanner = null;
-        try {
-              
-            scanner = new Scanner(file); 
-            Scanner dataScanner = null;
-            try {
-                while (scanner.hasNextLine()) {
 
-                    dataScanner = new Scanner(scanner.nextLine());
+        final List<ProductDto> products = new ArrayList<ProductDto>();
+
+        try (Scanner scanner = new Scanner(file);) {
+
+            while (scanner.hasNextLine()) {
+                try (Scanner dataScanner = new Scanner(scanner.nextLine());) {
 
                     while (dataScanner.hasNext()) {
 
@@ -95,23 +92,15 @@ public final class InputDataParser {
 
                     }
                     dataScanner.close();
+                }
 
-                }
-            } finally {
-                if (dataScanner != null) {
-                    dataScanner.close();
-                }
             }
-            scanner.close();
+
             return products;
-        
+
         } catch (Throwable e) {
             throw new RuntimeException(e);
-        } finally {
-            if (scanner != null) {
-                scanner.close();
-            }
         }
-         
+
     }
 }
