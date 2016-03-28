@@ -69,7 +69,7 @@ public class OrderDto {
     @Override
     public String toString() { 
         
-        return String.format("Sales Taxes: %.2f , Total : %.2f ", this.getSaleTaxes(), this.getTotal());
+        return String.format("Sales Taxes: %.2f\nTotal : %.2f ", this.getSaleTaxes(), this.getTotal());
         
     }
     
